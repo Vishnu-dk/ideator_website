@@ -22,7 +22,7 @@ const Photo = () => {
           className="w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] mix-blend-lighten"
         >
           <Image
-            src="/assests/idtr_logo_nw"
+            src="/assests/idtr_logo_nw.png"
             priority
             fill
             alt="pht"
