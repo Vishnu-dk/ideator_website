@@ -40,7 +40,7 @@ const UpcomingProjects = () => {
     >
       <div className="container mx-auto text-center">
         <div className="flex flex-col md:flex-row md:gap-[30px] mx-auto text-left">
-          <div className="w-full md:w-[50%] xl:h-[400px] flex flex-col md:justify-between order-2 md:order-none  my-auto">
+          <div className="w-full md:w-[50%] xl:h-[400px] flex flex-col md:justify-between order-2 md:order-none ">
             <div className="my-auto">
               <div className="md:text-6xl text-5xl py-3 leading-none font-extrabold text-transparent text-outline">
                 {project.id}
@@ -54,19 +54,19 @@ const UpcomingProjects = () => {
               <div className="border border-base1"></div>
             </div>
           </div>
-          <div className="w-full md:w-[50%]">
+          <div className="w-full h-full md:w-[50%]">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[400px] mb-12"
+              className="xl:h-[400px] md:mb-12"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
                 return (
-                  <SwiperSlide key={index} className="w-full">
+                  <SwiperSlide key={index} className="w-full my-auto">
                     <div className="lg:h-[400px] h-[200px] relative group w-3/4 mx-auto flex justify-center items-center bg-base2 ">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-primary z-10"></div>
-                      <div className="relative w-full h-full">
+                      <div className="relative w-full h-full ">
                         <Image src={project.img} fill className="object-fill" />
                       </div>
                     </div>

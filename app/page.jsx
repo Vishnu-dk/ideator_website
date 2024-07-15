@@ -19,7 +19,6 @@ export default function Home() {
           }} className=''>orem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the standard
                     dummy text ever since the 1500s,</motion.span>
-                    
           </div>
 
           <div className='mb-8 xl:mb-0 mx-auto lg:w-1/2 my-auto py-16 lg:py-0'>

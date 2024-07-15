@@ -109,7 +109,7 @@ const CompletedProjects = () => {
     >
       <div className="container mx-auto text-center h-full">
         <div className="flex flex-col md:flex-row md:gap-[30px] mx-auto text-left">
-          <div className="w-full md:w-[50%] xl:h-[400px] flex flex-col md:justify-between order-2 md:order-none  my-auto">
+          <div className="w-full md:w-[50%] xl:h-[400px] flex flex-col md:justify-between order-2 md:order-none  ">
             <div className="my-auto">
               <div className="md:text-6xl text-5xl py-3 leading-none font-extrabold text-transparent text-outline">
                 {project.id}
