@@ -8,21 +8,27 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 
 const projects = [
   {
-    id: 11,
-    img: "/assests/completed/multi_purpose_robo_arm.jpeg",
-    title: "Gesture Based Commando Disaster Management Robot",
-    des: "The objective of this project is to build a ROBOT that can be controlled by gesture wirelessly. User is able to control motions of the robot by wearing the controller glove and performing predefined gestures. In this project we are using a gyro controlled transmitter glove for the direction and speed control of the robot. For efficient aiding in commando operating and in the field of post disaster operation we are employing metal detection, gas detection and human detection. For better control of robot and for better analytic purpose real time video transmission is also done.",
+    id: 3,
+    img: "/assests/spacerover.jpg",
+    title: "Space Rover",
+des:"Our project involves designing an autonomous rover using actual space rover technology to explore extraterrestrial terrains. The rover will navigate using advanced sensors, including soil analysis sensors, and conduct scientific experiments. Key features include obstacle detection, soil analysis sensors, and solar-powered energy management. The aim is to enhance our capabilities in space exploration and robotics.",    aosdelay: "",
+  },
+  {
+    id: 2,
+    img: "/assests/super_talker.jpg",
+    title: "Super Talker",
+    des: "Super Talker is an advanced speech aid device designed for children with autism and cerebral palsy. Featuring eight customizable commands with visual aids, it facilitates essential communication with caregivers. Its user-friendly design and robust build ensure reliability and ease of use, making everyday interactions smoother and more effective. Join us in supporting this transformative project and help create a more inclusive world.",
     aosdelay: "",
   },
   {
-    id: 12,
-    img: "/assests/completed/multi_purpose_robo_arm.jpeg",
-    title: "Inverted Pendulum Balancer",
-    des: "The goal of this project is to implement an inverted pendulum balancer in the vertical two-dimensional plane, using proportional-integral-derivative (PID) feedback control. The inverted pendulum balancer is a controllable cart with an inverted pendulum attached to it. The system combines together a computational hardware, an input angle sensor and an output motor driver on a single board .The purpose of the system is to autonomously control the motion of the cart in order to prevent the pendulum from falling. The inputs over limited time in the form of pendulum position readings are mapped using algorithm to output in the form of motor control. The feedback control algorithm calculates the error in angle from the reference and relates to the motor velocity and direction using PID algorithm.The pendulum can be balanced by fine-tuning the variables-corresponding to the PID equation-according to system behavior.",
+    id: 1,
+    img: "/assests/eauto.jpg",
+    title: "E Auto",
+    des: "Our E-Auto Project is dedicated to converting an old autorickshaw into an innovative electric vehicle with startup potential. This initiative focuses on creating a sustainable and efficient transportation solution that can be scaled for commercial use. By integrating cutting-edge technology and forward-thinking design, we aim to revolutionize urban mobility while fostering environmental consciousness. This project not only advances green transportation but also cultivates entrepreneurial skills and startup culture among students. Join us in driving the future of sustainable innovation.",
     aosdelay: "",
   },
 ];
-
+const list = projects.length;
 const UpcomingProjects = () => {
   const [project, setProject] = useState(projects[0]);
   const handleSlideChange = (swiper) => {
@@ -43,7 +49,7 @@ const UpcomingProjects = () => {
           <div className="w-full md:w-[50%] xl:h-[400px] flex flex-col md:justify-between order-2 md:order-none ">
             <div className="my-auto">
               <div className="md:text-6xl text-5xl py-3 leading-none font-extrabold text-transparent text-outline">
-                {project.id}
+                {list - project.id + 1}
               </div>
               <div className="md:text-2xl text-lg py-2 font-bold leading-none text-base1 group-hover:text-acccent transition-all duration-500 capitalize">
                 {project.title}
@@ -65,9 +71,13 @@ const UpcomingProjects = () => {
                 return (
                   <SwiperSlide key={index} className="w-full my-auto">
                     <div className="lg:h-[400px] h-[200px] relative group w-3/4 mx-auto flex justify-center items-center bg-base2 ">
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-primary z-10"></div>
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-primary"></div>
                       <div className="relative w-full h-full ">
-                        <Image src={project.img} fill className="object-fill" />
+                        <Image
+                          src={project.img}
+                          fill
+                          className="object-contain"
+                        />
                       </div>
                     </div>
                   </SwiperSlide>
