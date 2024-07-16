@@ -28,7 +28,7 @@ const projects = [
     id: 15,
     img: "/assests/completed/Bigmaclite.jpg",
     title: "Big Mac Lite",
-    des: "",
+    des:"Big Mac Lite is a speech aid device designed to help bedridden individuals communicate with their caregivers. Our goal is to enhance their quality of life by providing a simple, effective, and user-friendly solution for essential communication."  
   },
   {
     id: 14,
