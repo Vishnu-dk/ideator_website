@@ -7,16 +7,28 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 
 const projects = [
   {
-    id: 16,
+    id: 18,
     img: "/assests/completed/cnc plotter.jpg",
     title: "Computer Numerical Control plotter",
     des: "These automated machines are used for drawing or plotting images on various surfaces and has multiple uses in both engineering and artistic field alike .We were able to develop a user-friendly interface for controlling the CNC Plotter.",
   },
   {
-    id: 15,
+    id: 17,
+    img: "/assests/completed/robowar.jpg",
+    title: "Robo War",
+    des: "",
+  },
+  {
+    id: 16,
     img: "/assests/completed/carbonfilter.jpg",
     title: "Activated Carbon Air Filter",
     des: "An advanced air purifier featuring activated charcoal technology. With a focus on innovation, this purifier offers self-cleaning functionality and seamless filter and activated carbon replacement, ensuring continuous effectiveness.",
+  },
+  {
+    id: 15,
+    img: "/assests/completed/Bigmaclite.jpg",
+    title: "Big Mac Lite",
+    des: "",
   },
   {
     id: 14,
@@ -155,6 +167,7 @@ const CompletedProjects = () => {
               slidesPerView={1}
               className="xl:h-[400px] mb-12"
               onSlideChange={handleSlideChange}
+              autoplay="true"
             >
               {projects.map((project, index) => {
                 return (
