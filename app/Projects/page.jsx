@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Tabs,TabsContent,TabsTrigger,TabsList } from "@/components/ui/tabs"
 import { Tooltip,TooltipContent,TooltipProvider,TooltipTrigger } from "@radix-ui/react-tooltip"
 import UpcomingProjects from "./UpcomingProjects"
+import ProjectCall from "./ProjectCall"
 
 
 
@@ -18,11 +19,16 @@ const Projects = () => {
 <Tabs defaultValue="upcomingprojects"   className="gap-[10px]">
     <TabsList className="mx-auto" >
       <TabsTrigger value="upcomingprojects">Upcoming Projects</TabsTrigger>
+      <TabsTrigger value="projectcall">Project Call</TabsTrigger>
       <TabsTrigger value="completedprojects">Completed Projects</TabsTrigger>
+      
     </TabsList>
 
     <TabsContent className="w-full" value="completedprojects">
       <CompletedProjects/>
+    </TabsContent>
+    <TabsContent className="w-full" value="projectcall">
+      <ProjectCall/>
     </TabsContent>
     <TabsContent className="w-full" value="upcomingprojects">
     <UpcomingProjects/>
