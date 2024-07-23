@@ -207,7 +207,7 @@ const Team = () => {
         <h1 className="text-center text-xl md:text-3xl  py-8 ">Introducing Our Team</h1>
       </div>
       <div className="container mx-auto text-center h-full">
-        <div className=" mx-auto py-8 text-left grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1">
+        <div className=" mx-auto py-8 text-left grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2">
           {members.map((member, index) => {
             return (
               <div className="py-6 mx-auto text-center" key={index}>
